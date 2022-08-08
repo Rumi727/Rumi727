@@ -1,5 +1,6 @@
 <img src="https://user-images.githubusercontent.com/65212622/163874681-fc26d4f7-d771-4fd3-a6ab-8276253c565f.png"/>
 쿠루미!!  
+
 실사 만들 돈과 시간으로 2기를 만들었으면 참 좋았을탠데...
 
 #
