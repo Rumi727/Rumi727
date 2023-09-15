@@ -1,4 +1,14 @@
-[이미지 준비중]
+<img src="https://github.com/SimsimhanChobo/SimsimhanChobo/assets/65212622/d0b8ea9e-a0a8-4873-a21f-33ed5b85e3be" width="512px"/>
+
+클레!!  
+도도코 이야기집 내놔...
+
+#
+프로필 출처: [Pixiv 89365290](https://www.pixiv.net/artworks/89365290)  
+상단 이미지 출처: [Pixiv 91976244](https://www.pixiv.net/artworks/91976244)
+
+문제시 삭제
+
 #
 개인 프로젝트 README.md 템플릿
 
