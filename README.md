@@ -4,7 +4,7 @@
 도도코 이야기집 내놔...
 
 #
-프로필 출처: [Pixiv 89365290](https://www.pixiv.net/artworks/89365290)  
+프로필 출처: ㅁ?ㄹ  
 상단 이미지 출처: [Pixiv 91976244](https://www.pixiv.net/artworks/91976244)
 
 문제시 삭제
