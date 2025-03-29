@@ -79,3 +79,39 @@
   * 호환성 모드를 활성화 하면, 창 관리를 수행하지 않기에 테마, 3D 렌더링, 창 크기 조절 같은것을 사용하지 못하나, 외부에서 렌더링 한 결과물을 그대로 운영체제로 출력하기에 호환성은 제일 좋다.
     * 예를 들어서 현실의 리눅스에서 실행된 프로그램을 호환성 모드로 불러왔다면, 리눅스에서 렌더링 된 창 자채를 있는 그대로 출력하여 창이 리눅스 테마로 보일 것이다.
   * 외부 세계의 운영체제에서 만들어졌지만, 실행 주체가 외부 세계의 운영체제가 아닌 내부 운영체제일 경우 어차피 운영체제 코드를 거치기에 후킹을 하지 않아도 되어 호환성 문제 또한 발생하지 않는다.
+
+``Rumi.OwnerManagedAttribute`` 사용 예시
+```cs
+using System;
+using Rumi;
+
+/*
+ * 커널은 일반적으론 평범한 메소드에 붙었을때 "Start", "Init" 같은 값이 메소드 이름이거나 입력되었다면 이를 명령 스레드에서 딱 한번 메소드를 실행한다.
+ * 반대로 "Update", "Loop" 같은 값이 입력되면 사용자나 커널이 취소할 때 까지 명령 스레드에서 무한히 실행한다.
+ */
+[OwnerManaged("Start")]
+void WaSans()
+{
+  Console.WriteLine(calc);
+  Console.WriteLine(OwnerInvoke());
+  Shutdown();
+}
+
+// 만약 extern 멤버에 붙었을경우, 커널은 입력된 값이나 멤버 이름에 맞는 값을 반환하려 노력한다.
+[OwnerManaged("532.513 * 153.425 / 6341")] extern double calc { get; }
+[OwnerManaged("놀아주라")] extern string OwnerInvoke();
+
+// 사용자한태 꼭 결과값을 알려줘야하거나 명령을 실행하는데 실패 했을 경우 (명령을 이해하지 못했거나 권한이 없다거나 등) 예외로 처리한다.
+[OwnerManaged("shutdown")] extern void Asdf();
+
+/* 출력: 
+12.8845303619303
+루미두 놀고 싶지만... 지금은 마니 바빠..!
+
+Unhandled exception. System.OperationCanceledException: 그리고.. 이건 무엇을 하고 싶은거야..?
+   at Program.<Main>$(System.String[] args) in <d38feed702e8490ba60a9ce2ead50dc6>:line 13
+*/
+```
+... 사실 웬만하면 오너캐한태 ~~직접 가서 말하는게 더 나을 것이다.~~ 코드에서 오너캐의 능력이 필요한 것은 꽤 보기 드물 것
+보통 코드로 커널한태 접근할 수 있는 권한을 얻었다면, 그 전에 이미 오너캐랑 한번 이상은 만났을 것이기 때문
+그냥 이런 것도 있다~ 하는 정도?
