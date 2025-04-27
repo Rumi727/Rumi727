@@ -1,10 +1,10 @@
-<img src="https://github.com/SimsimhanChobo/SimsimhanChobo/assets/65212622/d0b8ea9e-a0a8-4873-a21f-33ed5b85e3be" width="512px"/>
+<img src="https://github.com/Rumi727/Rumi727/assets/65212622/d0b8ea9e-a0a8-4873-a21f-33ed5b85e3be" width="512px"/>
 
-클레!!  
+클레!!\
 도도코 이야기집 내놔...
 
 #
-프로필 출처: ㅁ?ㄹ  
+프로필 출처: 자캐 지인이 그려줌\
 상단 이미지 출처: [Pixiv 91976244](https://www.pixiv.net/artworks/91976244)
 
 문제시 삭제
@@ -21,7 +21,7 @@
 ## 사용한 패키지와 DLL, 오픈 소스 출처
 - [Runi Engine](https://github.com/SimsimhanChobo/RuniEngine)
 
-제가 멍청해서 빼먹은 출처가 있을 수 있습니다...  
+제가 멍청해서 빼먹은 출처가 있을 수 있습니다...\
 만약 그럴 경우, 이슈에 올려주세요
 
 ## 사용한 아이콘 출처
@@ -32,7 +32,7 @@
 
 
 #
-자바 패키지 명명 규칙  
+자바 패키지 명명 규칙\
 `kr.kro.teamdodoco.YOUR_NICK_NAME.PLATFORM.PROJECT_NAME`
 
 #
