@@ -60,14 +60,21 @@
 
 ## 외형
 
-주의 : 이 그림들은 제가 **아닌** 제 지인이 그린 그림들입니다!
-또한, 디자인도 지인이 다 해줬습니다, ~~특징 간단하게 던졌는데 생각한 대로 그려준 지인은 천재가 아닐까하는...~~
+주의 : 이 그림들은 제가 **아닌** 제 지인이 그린 그림들입니다!\
+그렇기에 이 그림들은 어떠한 경로로든 원작자의 허락 없이 사용 및 재배포할 수 **없으며** 오로지 **디자인 참고용으로만** 사용할 수 있습니다.
 
-[전신](https://cdn.discordapp.com/attachments/1197767435701460992/1197767714245181500/483_20231017125343.png?ex=67e8d01c&is=67e77e9c&hm=4c2376134adf3c9d8cf6d0c6f44c66cbadacf88e821973199addc26cc92787f0&)\
-[SD](https://cdn.discordapp.com/attachments/1197767435701460992/1197767714958221322/4_1.png?ex=67e8d01c&is=67e77e9c&hm=46848e8728818f3924bbda16b843577b8ec4ef332c5ee05d4f209f7cb1c5a667&)\
-[SD](https://cdn.discordapp.com/attachments/1197767435701460992/1197767715373465662/3.png?ex=67e8d01c&is=67e77e9c&hm=f6fd89090c316580c5269fb17d781b606d8f99cd7558c0871c2dcd2291dd6826&)\
-[다른 그림](https://cdn.discordapp.com/attachments/1197767435701460992/1197767715935486074/13_20231217213226.png?ex=67e8d01c&is=67e77e9c&hm=1c993856019337a6c3f94afe20e34cdbdd07d6e2ef075b503ce124cc2e0cf33a&)\
-[다른 그림 2](https://cdn.discordapp.com/attachments/1197767435701460992/1240953356705337405/20240517_162946.png?ex=67e860a0&is=67e70f20&hm=fca883589d65a18c7e0ab849a12c7c03df93b11c5a907efd15b17aaa5004ab97&)
+추가로 디자인도 지인이 다 해줬습니다. ~~특징 간단하게 던졌는데 생각한 대로 그려준 지인은 천재가 아닐까하는...~~
+
+[전신](https://github.com/user-attachments/assets/d7307732-3bf7-4e47-93d4-4e7c5863b345)\
+[프사](https://github.com/user-attachments/assets/a1f0663a-4a70-4b44-a43d-56e8ec554ac2)\
+[SD](https://github.com/user-attachments/assets/c61082cf-0262-483a-a162-ae2ff184b1d8)\
+[SD 2](https://github.com/user-attachments/assets/085f924d-4552-4fb7-bb6f-28f41adeb12a)\
+[MD](https://github.com/user-attachments/assets/cf0955d7-36cd-4039-ab4f-04cd35f7722e)\
+
+프사는 제일 최근에 그려진거고, 제일 잘 나왔다고 생각해요\
+머리색 밝은 것도 꽤 이쁜것같애
+
+
 
 ## 설정
 
