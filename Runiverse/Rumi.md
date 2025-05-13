@@ -69,7 +69,7 @@
 [프사](https://github.com/user-attachments/assets/a1f0663a-4a70-4b44-a43d-56e8ec554ac2)\
 [SD](https://github.com/user-attachments/assets/c61082cf-0262-483a-a162-ae2ff184b1d8)\
 [SD 2](https://github.com/user-attachments/assets/085f924d-4552-4fb7-bb6f-28f41adeb12a)\
-[MD](https://github.com/user-attachments/assets/cf0955d7-36cd-4039-ab4f-04cd35f7722e)\
+[MD](https://github.com/user-attachments/assets/cf0955d7-36cd-4039-ab4f-04cd35f7722e)
 
 프사는 제일 최근에 그려진거고, 제일 잘 나왔다고 생각해요\
 머리색 밝은 것도 꽤 이쁜것같애
