@@ -2,7 +2,7 @@
 
 루미의 캐릭터 세계관\
 버전 : v0.0.8\
-약칭 : ROS
+약칭 : ROS, RuniOS
 
 ## 설명
 
@@ -14,13 +14,13 @@
     * 다만 이는 내부의 권한이기에 외부로 넘어가면 커널보다 권한이 높을 수 있다.
     * 그렇기에 부트로더나 바이오스 같은 특성상 권한이 커널보다 높은 시스템은 내부에 존재하지 않는다. 내부적으론 구조상 항상 커널이 권한이 제일 높다.
 * C# 기반이다
-  * ``Rumi.OwnerManagedAttribute`` 어트리뷰트가 있으며, 이 어트리뷰트는 오너캐 <-> C# 처럼 서로 쉽게 상호작용할 수 있게 도와준다.
+  * ``RuniOS.SystemCallAttribute`` 어트리뷰트가 있으며, 이 어트리뷰트는 오너캐 <-> C# 처럼 서로 쉽게 상호작용할 수 있게 도와준다.
     * 멤버 목록
       * ``public string description { get; }``
         * 커널이 이 멤버가 무슨 역할을 하는지 알 수 있게끔 문자열을 지정 하면 된다.
         * 오너캐는 평범하게 필드의 위치를 적지만, 일단 커널을 관리하는 오너캐는 지적 생명체이기에 한국어나 영어 같은거 적어도 잘 알아먹는다.
-     * 생성자 : ``public OwnerManagedAttribute(string location) => this.location = location;``
-  * ``Rumi.BigComplex`` 구조체가 있으며, 이 구조체는 한치의 오차도 없는 **매우 정확한 복소수**를 저장하고 계산할 수 있다.
+     * 생성자 : ``public SystemCallAttribute(string location) => this.location = location;``
+  * ``RuniOS.BigComplex`` 구조체가 있으며, 이 구조체는 한치의 오차도 없는 **매우 정확한 복소수**를 저장하고 계산할 수 있다.
     * 참고로 일종의 계산기 역할도 하는데, 미친 만능이라 무리수, 극한, 미적분, 방정식,  **심지어는 소수마저** (2, 3, 5, 7 할 때 그 소수 맞다) 원하는 모든 계산을 완벽하게 한치의 오차도 없이 바로 계산한다.
     * 다시 말하는데 **구조체다**.
     * 모든 연산을 원자적으로 처리한다. (Thread-safe)
@@ -32,7 +32,7 @@
     * 윈도우 프로그램이던 맥 프로그램이던 안드로이드 앱이던 심지어는 이세계 앱 조차 다 가능하다.
     * 게임의 경우 운영체제의 특성상 프레임 제한이 없다면 샐 수 없을 정도로 높은, 사실상 무제한인 프레임으로 게임을 할 수 있을 것이다.
 * 주 기억 장치의 용량은 **무한하다**.
-  * ``Rumi.BigComplex`` 타입이 존재할 수 있는 이유이기도 하다.
+  * ``RuniOS.BigComplex`` 타입이 존재할 수 있는 이유이기도 하다.
   * 보조 기억 장치는 기본적으로 없지만 외부 장치를 연결할 수는 있다. (있어도 의미 없음)
 * 운영체제의 대한 Life-cycle이자 틱, 즉 시간 흐름은 오너캐가 관리한다.
   * 일반적으로 틱과 틱 사이의 시간은 플랑크 시간이며 이를 델타타임이라 한다. (플랑크 시간 = ``5.391247(60) * (10^-44)[s]``)
@@ -44,11 +44,11 @@
   * Life-cycle를 관리하는 물질이 일단은 오너캐 한명 뿐이라 (CPU 코어가 하나라) 스레드가 병렬로 실행되진 않으나, 이는 정해진것은 아니다.
   * 시간 스레드
     * ``Thread.Sleep(int)`` 같은 정지 함수나 시간 관련 코드를 처리하기 위해 존재한다.
-    * 이 스레드는 ``Rumi.Time`` 정적 클래스에서 실행되며, 또한 이 클래스의 모든 연산은 원자적으로 처리한다. (Thread-safe)
+    * 이 스레드는 ``RuniOS.Time`` 정적 클래스에서 실행되며, 또한 이 클래스의 모든 연산은 원자적으로 처리한다. (Thread-safe)
     * ``Rumi.Time`` 클래스의 멤버 목록
-      * ``public static Rumi.BigComplex time { get; private set; }``
+      * ``public static RuniOS.BigComplex time { get; private set; }``
         * 1970년 1월 1일 00:00:00 협정 세계시 부터의 경과 시간을 초로 환산하여 실수로 나타낸 값이다. 윤초는 무시된다. (유닉스 시간이랑 똑같은 것처럼 보이지만 유닉스 시간은 정수라 다르다.)
-      * ``[Rumi.OwnerManaged("Rumi.Time.deltaTime")] public static extern Rumi.BigComplex deltaTime { get; }``
+      * ``[RuniOS.SystemCall("RuniOS.Time.deltaTime")] public static extern RuniOS.BigComplex deltaTime { get; }``
         * 틱과 틱 사이의 시간, 즉 델타타임을 반환한다. **(한치의 오차도 없이 매우 정확한 값이다.)**
     * 이 스레드는 틱이 지날때 마다 **항상** ``time += deltaTime;`` 코드를 실행한다.
     * ``Thread.Sleep(int)`` 같은 시간 기준으로 정지하는 코드는 일반적으론 ``time`` 프로퍼티의 값을 사용한다
@@ -80,16 +80,16 @@
     * 예를 들어서 현실의 리눅스에서 실행된 프로그램을 호환성 모드로 불러왔다면, 리눅스에서 렌더링 된 창 자채를 있는 그대로 출력하여 창이 리눅스 테마로 보일 것이다.
   * 외부 세계의 운영체제에서 만들어졌지만, 실행 주체가 외부 세계의 운영체제가 아닌 내부 운영체제일 경우 어차피 운영체제 코드를 거치기에 후킹을 하지 않아도 되어 호환성 문제 또한 발생하지 않는다.
 
-``Rumi.OwnerManagedAttribute`` 사용 예시
+``RuniOS.SystemCallAttribute`` 사용 예시
 ```cs
 using System;
-using Rumi;
+using RuniOS;
 
 /*
  * 커널은 일반적으론 평범한 메소드에 붙었을때 "Start", "Init" 같은 값이 메소드 이름이거나 입력되었다면 이를 명령 스레드에서 딱 한번 메소드를 실행한다.
  * 반대로 "Update", "Loop" 같은 값이 입력되면 사용자나 커널이 취소할 때 까지 명령 스레드에서 무한히 실행한다.
  */
-[OwnerManaged("Start")]
+[SystemCall("Start")]
 void WaSans()
 {
   Console.WriteLine(calc);
@@ -98,11 +98,11 @@ void WaSans()
 }
 
 // 만약 extern 멤버에 붙었을경우, 커널은 입력된 값이나 멤버 이름에 맞는 값을 반환하려 노력한다.
-[OwnerManaged("532.513 * 153.425 / 6341")] extern double calc { get; }
-[OwnerManaged("놀아주라")] extern string OwnerInvoke();
+[SystemCall("532.513 * 153.425 / 6341")] extern double calc { get; }
+[SystemCall("놀아주라")] extern string OwnerInvoke();
 
 // 사용자한태 꼭 결과값을 알려줘야하거나 명령을 실행하는데 실패 했을 경우 (명령을 이해하지 못했거나 권한이 없다거나 등) 예외로 처리한다.
-[OwnerManaged("shutdown")] extern void Asdf();
+[SystemCall("shutdown")] extern void Asdf();
 
 /* 출력: 
 12.8845303619303
