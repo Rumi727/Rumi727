@@ -88,7 +88,8 @@ using RuniOS;
 
 /*
  * 커널은 일반적으론 평범한 메소드에 붙었을때 "Start", "Init" 같은 값이 메소드 이름이거나 입력되었다면 이를 명령 스레드에서 딱 한번 메소드를 실행한다.
- * 반대로 "Update", "Loop" 같은 값이 입력되면 사용자나 커널이 취소할 때 까지 명령 스레드에서 무한히 실행한다.
+ * 반대로 "Update", "Loop" 같은 값이 입력되면 운영체제의 Life-cycle에 종속되어 사용자나 커널이 취소할 때 까지 명령 스레드에서 틱 당 한번씩 무한히 실행한다.
+ * 만약 extren 함수가 아니고, 클래스의 멤버이지만 정적 멤버는 아닐 경우엔 인스턴스가 생성될 때 실행한다.
  */
 [SystemCall("Start")]
 void WaSans()
@@ -98,19 +99,23 @@ void WaSans()
   Shutdown();
 }
 
-// 만약 extern 멤버에 붙었을경우, 커널은 입력된 값이나 멤버 이름에 맞는 값을 반환하려 노력한다.
-[SystemCall("532.513 * 153.425 / 6341")] extern double calc { get; }
-[SystemCall("놀아주라")] extern string OwnerInvoke();
+// 커널은 일반적으론 입력된 값이나 멤버 이름에 맞는 값을 반환하려 노력한다.
+[SystemCall("532.513 * 153.425 / 6341")] static extern double calc { get; }
+[SystemCall("놀아주라")] static extern string OwnerInvoke();
 
 // 사용자한태 꼭 결과값을 알려줘야하거나 명령을 실행하는데 실패 했을 경우 (명령을 이해하지 못했거나 권한이 없다거나 등) 예외로 처리한다.
-[SystemCall("shutdown")] extern void Asdf();
+[SystemCall("shutdown")] static extern void Asdf();
+```
+```cs
+/* 출력
 
-/* 출력: 
 12.8845303619303
 루미두 놀고 싶지만... 지금은 마니 바빠..!
 
 Unhandled exception. System.OperationCanceledException: 그리고.. 이건 무엇을 하고 싶은거야..?
-   at Program.<Main>$(System.String[] args) in <d38feed702e8490ba60a9ce2ead50dc6>:line 13
+   at Submission#0.<WaSans>d__0() in <8d5cc6388a0d2b4bdbcc56aadf0e80d7>:line 10
+   at Submission#0.<Factory0>(Object $host, Object[] $args) in <8d5cc6388a0d2b4bdbcc56aadf0e80d7>:line 0
+
 */
 ```
 ... 사실 웬만하면 오너캐한태 ~~직접 가서 말하는게 더 나을 것이다.~~ 코드에서 오너캐의 능력이 필요한 것은 꽤 보기 드물 것\
