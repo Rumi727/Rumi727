@@ -51,7 +51,7 @@
     * ``Rumi.Time`` 클래스의 멤버 목록
       * ``[RuniOS.SystemCall("RuniOS.Time.time")] public static extern RuniOS.BigComplex time { get; }``
         * 1970년 1월 1일 00:00:00 협정 세계시 부터의 경과 시간을 초로 환산하여 실수로 나타낸 값이다. 윤초는 무시된다. (유닉스 시간이랑 똑같은 것처럼 보이지만 유닉스 시간은 정수라 다르다.)
-        * ``[RuniOS.SystemCall("RuniOS.Time.deltaTime")] public static extern RuniOS.BigComplex deltaTime { get; }``
+      * ``[RuniOS.SystemCall("RuniOS.Time.deltaTime")] public static extern RuniOS.BigComplex deltaTime { get; }``
         * 틱과 틱 사이의 시간, 즉 델타타임을 반환한다. **(한치의 오차도 없이 매우 정확한 값이다.)**
     * ``Thread.Sleep(int)`` 같은 시간 기준으로 정지하는 코드는 일반적으론 ``time`` 프로퍼티의 값을 사용한다
   * 메인 스레드
