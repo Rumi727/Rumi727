@@ -71,14 +71,15 @@
 
 추가로 디자인도 지인이 다 해줬습니다. ~~특징 간단하게 던졌는데 생각한 대로 그려준 지인은 천재가 아닐까하는...~~
 
+<img width="2999" height="1895" alt="-3" src="https://github.com/user-attachments/assets/71403df1-9a07-4d7b-8530-a30cc70474a5" />
+
+아래는 기록 보존용? 레거시 이미지들
+
 [전신](https://github.com/user-attachments/assets/d7307732-3bf7-4e47-93d4-4e7c5863b345)\
 [프사](https://github.com/user-attachments/assets/a1f0663a-4a70-4b44-a43d-56e8ec554ac2)\
 [SD](https://github.com/user-attachments/assets/c61082cf-0262-483a-a162-ae2ff184b1d8)\
 [SD 2](https://github.com/user-attachments/assets/085f924d-4552-4fb7-bb6f-28f41adeb12a)\
 [MD](https://github.com/user-attachments/assets/cf0955d7-36cd-4039-ab4f-04cd35f7722e)
-
-프사는 제일 최근에 그려진거고, 제일 잘 나왔다고 생각해요\
-머리색 밝은 것도 꽤 이쁜것같애
 
 
 
