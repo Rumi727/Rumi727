@@ -1,6 +1,6 @@
 # Runiverse OS
 
-루미의 캐릭터 세계관\
+나의 캐릭터 세계관\
 버전 : v0.0.8\
 약칭 : ROS, RuniOS
 
