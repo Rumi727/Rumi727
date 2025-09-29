@@ -8,7 +8,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="RuniOS.Process">
-    <Position X="30.5" Y="3" Width="3.25" />
+    <Position X="30.5" Y="2.75" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAEAAAAAAAAAAABAAgA=</HashCode>
       <FileName>Process.cs</FileName>
@@ -29,13 +29,13 @@
     </TypeIdentifier>
   </Class>
   <Class Name="RuniOS.Processing.Kimu">
-    <Position X="32.5" Y="6.25" Width="2.75" />
+    <Position X="32.5" Y="6" Width="2.75" />
     <InheritanceLine Type="RuniOS.Process" ManuallyRouted="true">
       <Path>
-        <Point X="32.125" Y="4.72" />
-        <Point X="32.125" Y="5.437" />
-        <Point X="33.875" Y="5.437" />
-        <Point X="33.875" Y="6.25" />
+        <Point X="32.125" Y="4.47" />
+        <Point X="32.125" Y="5.187" />
+        <Point X="33.875" Y="5.187" />
+        <Point X="33.875" Y="6" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
@@ -46,13 +46,13 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="RuniOS.Processing.Rumi">
-    <Position X="29" Y="6.25" Width="2.75" />
+    <Position X="29" Y="6" Width="2.75" />
     <InheritanceLine Type="RuniOS.Process" ManuallyRouted="true">
       <Path>
-        <Point X="32.125" Y="4.72" />
-        <Point X="32.125" Y="5.447" />
-        <Point X="30.375" Y="5.447" />
-        <Point X="30.375" Y="6.25" />
+        <Point X="32.125" Y="4.47" />
+        <Point X="32.125" Y="5.197" />
+        <Point X="30.375" Y="5.197" />
+        <Point X="30.375" Y="6" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
