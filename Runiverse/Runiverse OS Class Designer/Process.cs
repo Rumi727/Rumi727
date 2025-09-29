@@ -3,8 +3,8 @@
 namespace RuniOS
 {
     /// <summary>
-    /// 프로세스에 대한 **모든 정보를** 가지고 관리합니다.<br/>
-    /// <see cref="System.Reflection.Emit.TypeBuilder"/> 클래스 등을 사용하여 프로세스마다 <see cref="Process"/> 클래스와 여러 인터페이스를 상속 받은 적절한 타입을 동적으로 생성한다.
+    /// 프로세스에 대한 <b>모든 정보를</b> 가지고 관리합니다.<br/>
+    /// <see cref="System.Reflection.Emit.TypeBuilder"/> 클래스 등을 사용하여 프로세스마다 <see cref="Process"/> 클래스와 여러 인터페이스를 상속 받은 적절한 타입을 동적으로 생성합니다.
     /// </summary>
     public abstract unsafe class Process
     {
