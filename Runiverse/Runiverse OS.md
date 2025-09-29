@@ -36,6 +36,28 @@
     * 참고로 일종의 계산기 역할도 하는데, 미친 만능이라 무리수, 극한, 미적분, 방정식,  **심지어는 소수마저** (2, 3, 5, 7 할 때 그 소수 맞다) 원하는 모든 계산을 완벽하게 한치의 오차도 없이 바로 계산한다.
     * 다시 말하는데 **구조체다**.
     * 모든 연산을 원자적으로 처리한다. (Thread-safe)
+  * ``RuniOS.AnalogConverter`` 정적 클래스가 있으며, 이 클래스는 **아날로그와 디지털을 상호변환하는** 매우 중요한 역할을 수행한다.
+    * 이 클래스가 없다면 루미를 제외한 **모든 물질과 생명체는 운영체제에 들어갈 수 조차 없다.** (그야 운영체제는 디지털이고, 디지털 생명체라고 해도 운영체제에 맞게 변환해주긴 해야하니까)
+    * 멤버 목록
+      * ``[RuniOS.SystemCall("RuniOS.AnalogConverter.ToDigital")] public static extern unsafe RuniOS.Process ToDigital(void* substance);``
+        * 알 수 없는 물질을 포인터로 전달하여 루미가 디지털로 그 값을 Process 클래스로 만들어 반환한다. (소멸 -> 생성의 단계가 아니다. **변환이다.**, 매우 안전하게 진행되며 BigComplex의 도움으로 오차는 전혀 없다.)
+      * ``[RuniOS.SystemCall("RuniOS.AnalogConverter.ToDigital")] public static extern unsafe void ToAnalog(Process process);``
+        * 프로세스를 다시 아날로그로 변환한다.
+  * ``RuniOS.Process`` 안전하지 않은 (unsafe) **추상** 클래스가 있으며, 이 클래스는 프로세스에 대한 **모든 정보를** 가지고 관리하는 매우 중요한 역할을 수행한다.
+    * ``System.Reflection.Emit.TypeBuilder`` 클래스 등을 사용하여 프로세스마다 ``RuniOS.Process`` 클래스와 여러 인터페이스를 상속 받은 적절한 타입을 동적으로 생성한다. 
+    * 멤버 목록
+      * ``public static System.Collection.Generic.IReadOnlyList<RuniOS.Process> processes { get; }``
+        * 운영체제에 로드된 모든 프로세스 목록을 가져온다.
+      * ``public void* substance { get; }``
+        * 메모리상에서 물질에 대한 모든 데이터를 가지고 있는 위치를 가리키는 포인터이다.
+        * 이렇게 노출되면 위험하지 않냐고 생각할 수 있지만, 안전하다. 포인터가 가르키는 메모리 위치는 Ring 0만 접근할 수 있게 보호된 위치이기 때문이다.
+      * ``public System.Numerics.BigInteger id { get; }``
+        * 프로세스의 고유 id이다. 별건 없다. 그냥 뭔가 있어야할 것 같음ㅋㅋㅋㅋㅋ
+      * 프로세스는 물질에 따라 적절한 인터페이스를 동적으로 상속한다.
+        * 예를 들어서 현실의 우주에서 온 물질이라면 ``IUniverse`` 인터페이스를 상속할 것 입니다.
+        * 그런 인터페이스는 꽤나 유용할 수 있는데, 예를 들어 ``IHuman`` 인터페이스는 nationality, name, birthday, biologicalSex, position 같은 유용한 프로퍼티를 노출하며, 이는 루미가 물질 값에서 (substance) 적절히 가져와서 계산하여 랩핑한 것이다.
+          * RuniOS 운영체제의 예시 클래스 다이어그램은 밑에 있습니다!
+  * Runi OS 운영체제의 예시 [클래스 다이어그램](https://github.com/user-attachments/assets/7cbadb36-9850-4b39-b77d-9fcdcb6dc750)
 * 현실 사람 또는 현실 그 자채, 아니면 특정 세계관의 캐릭터 또는 세계관 그 자채를 운영체제로 불러올 수 있다.
   * 오너캐는 이를 ``프로세스``라고 부른다.
   * 오너캐 또한 프로세스로 취급하긴 하다.
@@ -58,9 +80,9 @@
     * ``Thread.Sleep(int)`` 같은 정지 함수나 시간 관련 코드를 처리하기 위해 존재한다.
     * 이 스레드는 ``RuniOS.Time`` 정적 클래스에서 실행되며, 또한 이 클래스의 모든 연산은 원자적으로 처리한다. (Thread-safe)
     * ``Rumi.Time`` 클래스의 멤버 목록
-      * ``[RuniOS.SystemCall("RuniOS.Time.time")] public static extern RuniOS.BigComplex time { get; }``
+      * ``public static extern RuniOS.BigComplex time { [RuniOS.SystemCall("RuniOS.Time.time")] get; }``
         * 1970년 1월 1일 00:00:00 협정 세계시 부터의 경과 시간을 초로 환산하여 실수로 나타낸 값이다. 윤초는 무시된다. (유닉스 시간이랑 똑같은 것처럼 보이지만 유닉스 시간은 정수라 다르다.)
-      * ``[RuniOS.SystemCall("RuniOS.Time.deltaTime")] public static extern RuniOS.BigComplex deltaTime { get; }``
+      * ``public static extern RuniOS.BigComplex deltaTime { [RuniOS.SystemCall("RuniOS.Time.deltaTime")] get; }``
         * 틱과 틱 사이의 시간, 즉 델타타임을 반환한다. **(한치의 오차도 없이 매우 정확한 값이다.)**
     * ``Thread.Sleep(int)`` 같은 시간 기준으로 정지하는 코드는 일반적으론 ``time`` 프로퍼티의 값을 사용한다
   * 메인 스레드
