@@ -57,7 +57,7 @@
         * 예를 들어서 현실의 우주에서 온 물질이라면 ``IUniverse`` 인터페이스를 상속할 것 입니다.
         * 그런 인터페이스는 꽤나 유용할 수 있는데, 예를 들어 ``IHuman`` 인터페이스는 nationality, name, birthday, biologicalSex, position 같은 유용한 프로퍼티를 노출하며, 이는 루미가 물질 값에서 (substance) 적절히 가져와서 계산하여 랩핑한 것이다.
           * RuniOS 운영체제의 예시 클래스 다이어그램은 밑에 있습니다!
-  * Runi OS 운영체제의 예시 [클래스 다이어그램](https://github.com/user-attachments/assets/7cbadb36-9850-4b39-b77d-9fcdcb6dc750)
+  * Runi OS 운영체제의 예시 [클래스 다이어그램](https://raw.githubusercontent.com/Rumi727/Rumi727/refs/heads/main/Runiverse/Runiverse%20OS%20Class%20Designer/ClassDiagram.png)
 * 현실 사람 또는 현실 그 자채, 아니면 특정 세계관의 캐릭터 또는 세계관 그 자채를 운영체제로 불러올 수 있다.
   * 오너캐는 이를 ``프로세스``라고 부른다.
   * 오너캐 또한 프로세스로 취급하긴 하다.
