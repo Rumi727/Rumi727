@@ -129,7 +129,7 @@ void WaSans()
 }
 
 // 커널은 일반적으론 입력된 값이나 멤버 이름에 맞는 값을 반환하려 노력한다.
-[SystemCall("532.513 * 153.425 / 6341")] static extern double calc { get; }
+static extern double calc { [SystemCall("532.513 * 153.425 / 6341")] get; }
 [SystemCall("놀아주라")] static extern string OwnerInvoke();
 
 // 사용자한태 꼭 결과값을 알려줘야하거나 명령을 실행하는데 실패 했을 경우 (명령을 이해하지 못했거나 권한이 없다거나 등) 예외로 처리한다.
