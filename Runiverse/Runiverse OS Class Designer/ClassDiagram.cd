@@ -22,7 +22,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="RuniOS.Time">
-    <Position X="36.75" Y="3.25" Width="2.75" />
+    <Position X="36.75" Y="2.75" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAABAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Time.cs</FileName>
