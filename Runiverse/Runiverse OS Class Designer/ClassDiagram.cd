@@ -141,7 +141,7 @@
     </TypeIdentifier>
   </Interface>
   <Interface Name="RuniOS.Processing.IEarth">
-    <Position X="19.5" Y="14" Width="1.25" />
+    <Position X="19.5" Y="13.75" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Processing\IEarth.cs</FileName>
@@ -150,12 +150,12 @@
   <Interface Name="RuniOS.Processing.IFourthDimension">
     <Position X="19.5" Y="3" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAABAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAABAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
       <FileName>Processing\IFourthDimension.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="RuniOS.Processing.IGalaxy">
-    <Position X="17" Y="9.75" Width="2.75" />
+    <Position X="17" Y="9.5" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Processing\IGalaxy.cs</FileName>
@@ -169,7 +169,7 @@
     </TypeIdentifier>
   </Interface>
   <Interface Name="RuniOS.Processing.IPlanetary">
-    <Position X="20.5" Y="9.75" Width="2.75" />
+    <Position X="20.5" Y="9.5" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
       <FileName>Processing\IPlanetary.cs</FileName>
@@ -183,14 +183,14 @@
     </TypeIdentifier>
   </Interface>
   <Interface Name="RuniOS.Processing.ISolarSystem">
-    <Position X="16.75" Y="11.5" Width="3.25" />
+    <Position X="16.75" Y="11.25" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
       <FileName>Processing\ISolarSystem.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="RuniOS.Processing.IUniverse">
-    <Position X="19.25" Y="7.75" Width="1.75" />
+    <Position X="19.25" Y="7.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Processing\IUniverse.cs</FileName>
@@ -204,7 +204,7 @@
     </TypeIdentifier>
   </Interface>
   <Interface Name="RuniOS.Processing.IRuniverse">
-    <Position X="23.75" Y="7.75" Width="1.75" />
+    <Position X="23.75" Y="7.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Processing\IRuniverse.cs</FileName>
