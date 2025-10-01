@@ -11,7 +11,7 @@ namespace RuniOS
         /// <summary>
         /// 운영체제에 로드된 모든 프로세스 목록을 가져옵니다.
         /// </summary>
-        public static IReadOnlyList<Process> processes { get; } = new List<Process>();
+        public static IReadOnlyList<Process> processes { get; } = [];
 
         /// <summary>
         /// 메모리상에서 물질에 대한 모든 데이터를 가지고 있는 위치를 가리키는 포인터이다.<br/>
@@ -24,6 +24,17 @@ namespace RuniOS
         /// 프로세스 고유의 id 값 입니다.
         /// </summary>
         public BigInteger id { get; }
+
+        /// <summary>
+        /// 프로세스의 특권 레벨 입니다.
+        /// </summary>
+        /// <exception cref="UnauthorizedAccessException">적절한 권한이 없을때 발생하는 예외입니다.</exception>
+        /// <exception cref="NotSupportedException">커널의 특권 레벨을 변경하려할 때 발생하는 예외입니다.</exception>
+        public int privilegeLevel
+        {
+            get => throw new NotImplementedException();
+            set => throw new NotImplementedException();
+        }
 
         /// <summary>
         /// 프로세스를 운영체제에서 강제 종료합니다.

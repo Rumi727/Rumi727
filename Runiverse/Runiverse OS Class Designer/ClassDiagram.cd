@@ -1,68 +1,68 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Class Name="RuniOS.AnalogConverter">
-    <Position X="30.5" Y="1.25" Width="3.25" />
+    <Position X="41.25" Y="1.25" Width="3.25" />
     <TypeIdentifier>
       <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
       <FileName>AnalogConverter.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="RuniOS.Process">
-    <Position X="30.5" Y="2.75" Width="3.25" />
+    <Position X="41.25" Y="2.75" Width="3.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAEAAAAAAAAAAABAAgA=</HashCode>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAIAAAEAAAAAAAAAAABAAgA=</HashCode>
       <FileName>Process.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="RuniOS.SystemCall">
-    <Position X="36.75" Y="1.25" Width="2.5" />
+    <Position X="47.5" Y="1.25" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>SystemCall.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="RuniOS.Time">
-    <Position X="36.75" Y="2.75" Width="2.75" />
+    <Position X="47.5" Y="2.75" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAABAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Time.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="RuniOS.Processing.Kimu">
-    <Position X="32.5" Y="6" Width="2.75" />
+    <Position X="43.25" Y="6" Width="2.75" />
     <InheritanceLine Type="RuniOS.Process" ManuallyRouted="true">
       <Path>
-        <Point X="32.125" Y="4.47" />
-        <Point X="32.125" Y="5.187" />
-        <Point X="33.875" Y="5.187" />
-        <Point X="33.875" Y="6" />
+        <Point X="42.875" Y="4.638" />
+        <Point X="42.875" Y="5.187" />
+        <Point X="44.625" Y="5.187" />
+        <Point X="44.625" Y="6" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AIABAAAAAAAAAAAAAAAgIAgAAAAEAAAAAAQIAAAAAAA=</HashCode>
+      <HashCode>AIABAAAAAAAAQAAABAAgIAgAAAAEAAAAAAQKAAAAAAA=</HashCode>
       <FileName>Processing\Kimu.cs</FileName>
       <NewMemberFileName>Processing\Rumi.cs</NewMemberFileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="RuniOS.Processing.Rumi">
-    <Position X="29" Y="6" Width="2.75" />
+    <Position X="39.75" Y="6" Width="2.75" />
     <InheritanceLine Type="RuniOS.Process" ManuallyRouted="true">
       <Path>
-        <Point X="32.125" Y="4.47" />
-        <Point X="32.125" Y="5.197" />
-        <Point X="30.375" Y="5.197" />
-        <Point X="30.375" Y="6" />
+        <Point X="42.875" Y="4.638" />
+        <Point X="42.875" Y="5.197" />
+        <Point X="41.125" Y="5.197" />
+        <Point X="41.125" Y="6" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AIABAAAAAAAAAAAAAAAgIAgAAAAEAAAAAAQIAAAAAAA=</HashCode>
+      <HashCode>AIABAAAAAAAAQAAABAAgIAgAAAAEAAAAAAQKAAAAAAA=</HashCode>
       <FileName>Processing\Rumi.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Struct Name="RuniOS.BigComplex">
-    <Position X="46.5" Y="1.25" Width="7.5" />
+    <Position X="57.25" Y="1.25" Width="7.5" />
     <TypeIdentifier>
       <HashCode>RMQhAAA0BFACAIYE4AWLIggAAQMARIMKpgFAAQAsB+A=</HashCode>
       <FileName>BigComplex.cs</FileName>
@@ -70,7 +70,7 @@
     <Lollipop Position="0.2" />
   </Struct>
   <Struct Name="RuniOS.BigDateTime">
-    <Position X="43" Y="2.75" Width="3" />
+    <Position X="53.75" Y="2.75" Width="3" />
     <TypeIdentifier>
       <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>BigDateTime.cs</FileName>
@@ -78,157 +78,327 @@
     </TypeIdentifier>
   </Struct>
   <Struct Name="RuniOS.BigQuaternion">
-    <Position X="40" Y="6.5" Width="2.5" />
+    <Position X="50.75" Y="6.5" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAhgAQAAAAA=</HashCode>
       <FileName>BigQuaternion.cs</FileName>
     </TypeIdentifier>
   </Struct>
   <Struct Name="RuniOS.BigTimeSpan">
-    <Position X="43" Y="1.25" Width="2.75" />
+    <Position X="53.75" Y="1.25" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>BigTimeSpan.cs</FileName>
     </TypeIdentifier>
   </Struct>
   <Struct Name="RuniOS.BigVector2">
-    <Position X="40" Y="1.25" Width="2.5" />
+    <Position X="50.75" Y="1.25" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAAAA=</HashCode>
       <FileName>BigVector2.cs</FileName>
     </TypeIdentifier>
   </Struct>
   <Struct Name="RuniOS.BigVector4">
-    <Position X="40" Y="4.5" Width="2.5" />
+    <Position X="50.75" Y="4.5" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAhgAQAAAAA=</HashCode>
       <FileName>BigVector4.cs</FileName>
     </TypeIdentifier>
   </Struct>
   <Struct Name="RuniOS.BigVector3">
-    <Position X="40" Y="2.75" Width="2.5" />
+    <Position X="50.75" Y="2.75" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAQAAAAA=</HashCode>
       <FileName>BigVector3.cs</FileName>
     </TypeIdentifier>
   </Struct>
-  <Interface Name="RuniOS.Processing.IAnalogCreature">
+  <Interface Name="RuniOS.Processing.Interfaces.Creatures.IAnalogCreature">
     <Position X="3.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Processing\IAnalogCreature.cs</FileName>
+      <FileName>Processing\Interfaces\Creatures\IAnalogCreature.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="RuniOS.Processing.IAnimal">
+  <Interface Name="RuniOS.Processing.Interfaces.Creatures.IAnimal">
     <Position X="9.75" Y="3.5" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Processing\IAnimal.cs</FileName>
+      <FileName>Processing\Interfaces\Creatures\IAnimal.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="RuniOS.Processing.ICreature">
+  <Interface Name="RuniOS.Processing.Interfaces.Creatures.ICreature">
     <Position X="6.5" Y="1.25" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Processing\ICreature.cs</FileName>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAgAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Processing\Interfaces\Creatures\ICreature.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="RuniOS.Processing.IDimension">
-    <Position X="21.5" Y="1.25" Width="1.75" />
+  <Interface Name="RuniOS.Processing.Interfaces.Dimensions.IDimension">
+    <Position X="24.75" Y="1.25" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Processing\IDimension.cs</FileName>
+      <FileName>Processing\Interfaces\Dimensions\IDimension.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="RuniOS.Processing.IEarth">
-    <Position X="19.5" Y="13.75" Width="1.25" />
+  <Interface Name="RuniOS.Processing.Interfaces.Dimensions.Reality.IEarth">
+    <Position X="17.75" Y="15" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Processing\IEarth.cs</FileName>
+      <FileName>Processing\Interfaces\Dimensions\Reality\IEarth.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="RuniOS.Processing.IFourthDimension">
-    <Position X="19.5" Y="3" Width="2.5" />
+  <Interface Name="RuniOS.Processing.Interfaces.Dimensions.IFourthDimension">
+    <Position X="22.75" Y="3" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAABAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
-      <FileName>Processing\IFourthDimension.cs</FileName>
+      <FileName>Processing\Interfaces\Dimensions\IFourthDimension.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="RuniOS.Processing.IGalaxy">
-    <Position X="17" Y="9.5" Width="2.75" />
+  <Interface Name="RuniOS.Processing.Interfaces.Dimensions.Reality.IGalaxy">
+    <Position X="15.25" Y="10.75" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Processing\IGalaxy.cs</FileName>
+      <FileName>Processing\Interfaces\Dimensions\Reality\IGalaxy.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="RuniOS.Processing.IHuman">
+  <Interface Name="RuniOS.Processing.Interfaces.Creatures.IHuman">
     <Position X="10" Y="5.75" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
-      <FileName>Processing\IHuman.cs</FileName>
+      <FileName>Processing\Interfaces\Creatures\IHuman.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="RuniOS.Processing.IPlanetary">
-    <Position X="20.5" Y="9.5" Width="2.75" />
+  <Interface Name="RuniOS.Processing.Interfaces.Dimensions.Reality.IPlanetary">
+    <Position X="18.75" Y="10.75" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
-      <FileName>Processing\IPlanetary.cs</FileName>
+      <FileName>Processing\Interfaces\Dimensions\Reality\IPlanetary.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="RuniOS.Processing.IPlant">
+  <Interface Name="RuniOS.Processing.Interfaces.Creatures.IPlant">
     <Position X="7.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Processing\IPlant.cs</FileName>
+      <FileName>Processing\Interfaces\Creatures\IPlant.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="RuniOS.Processing.ISolarSystem">
-    <Position X="16.75" Y="11.25" Width="3.25" />
+  <Interface Name="RuniOS.Processing.Interfaces.Dimensions.Reality.ISolarSystem">
+    <Position X="15" Y="12.5" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
-      <FileName>Processing\ISolarSystem.cs</FileName>
+      <FileName>Processing\Interfaces\Dimensions\Reality\ISolarSystem.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="RuniOS.Processing.IUniverse">
-    <Position X="19.25" Y="7.5" Width="1.75" />
+  <Interface Name="RuniOS.Processing.Interfaces.Dimensions.Reality.IUniverse">
+    <Position X="17.5" Y="7.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Processing\IUniverse.cs</FileName>
+      <FileName>Processing\Interfaces\Dimensions\Reality\IUniverse.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="RuniOS.Processing.IDigitalCreature">
+  <Interface Name="RuniOS.Processing.Interfaces.Creatures.IDigitalCreature">
     <Position X="5.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Processing\IDigitalCreature.cs</FileName>
+      <FileName>Processing\Interfaces\Creatures\IDigitalCreature.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="RuniOS.Processing.IRuniverse">
-    <Position X="23.75" Y="7.5" Width="1.75" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Processing\IRuniverse.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="RuniOS.Processing.IRealPhysics">
-    <Position X="21" Y="5.25" Width="2.75" />
+  <Interface Name="RuniOS.Processing.Interfaces.Dimensions.Reality.IRealPhysics">
+    <Position X="24.25" Y="5.25" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
-      <FileName>Processing\IRealPhysics.cs</FileName>
+      <FileName>Processing\Interfaces\Dimensions\Reality\IRealPhysics.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="RuniOS.Processing.IPhysics">
-    <Position X="23" Y="3" Width="1.75" />
+  <Interface Name="RuniOS.Processing.Interfaces.Dimensions.IPhysics">
+    <Position X="26.25" Y="3" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Processing\IPhysics.cs</FileName>
+      <FileName>Processing\Interfaces\Dimensions\IPhysics.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Enum Name="RuniOS.Processing.BiologicalSex">
+  <Interface Name="RuniOS.Processing.Interfaces.Dimensions.IRuniverse">
+    <Position X="26.25" Y="16.75" Width="1.75" />
+    <InheritanceLine Type="RuniOS.Processing.Interfaces.IVirtualWorld" FixedToPoint="true">
+      <Path>
+        <Point X="29" Y="8.913" />
+        <Point X="29" Y="17.312" />
+        <Point X="28" Y="17.312" />
+      </Path>
+    </InheritanceLine>
+    <InheritanceLine Type="RuniOS.Processing.Interfaces.IOperatingSystem" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="23.938" Y="15.995" />
+        <Point X="23.938" Y="17.312" />
+        <Point X="26.25" Y="17.312" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Processing\Interfaces\Dimensions\IRuniverse.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="RuniOS.Processing.Interfaces.Dimensions.Reality.ICountry">
+    <Position X="15.75" Y="16.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Processing\Interfaces\Dimensions\Reality\ICountry.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="RuniOS.Processing.Interfaces.Dimensions.BlueArchive.IKivotos">
+    <Position X="32.75" Y="10" Width="1.5" />
+    <InheritanceLine Type="RuniOS.Processing.Interfaces.IVirtualWorld" FixedToPoint="true">
+      <Path>
+        <Point X="29" Y="8.913" />
+        <Point X="29" Y="9.625" />
+        <Point X="30.542" Y="9.625" Type="JumpStart" />
+        <Point X="30.708" Y="9.625" Type="JumpEnd" />
+        <Point X="33.292" Y="9.625" Type="JumpStart" />
+        <Point X="33.458" Y="9.625" Type="JumpEnd" />
+        <Point X="33.625" Y="9.625" />
+        <Point X="33.625" Y="10" />
+      </Path>
+    </InheritanceLine>
+    <InheritanceLine Type="RuniOS.Processing.Interfaces.Dimensions.Reality.IRealPhysics" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="25.625" Y="6.671" />
+        <Point X="25.625" Y="7.12" />
+        <Point X="33.375" Y="7.12" />
+        <Point X="33.375" Y="10" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Processing\Interfaces\Dimensions\BlueArchive\IKivotos.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="RuniOS.Processing.Interfaces.IVirtualWorld">
+    <Position X="27.75" Y="7.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Processing\Interfaces\IVirtualWorld.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="RuniOS.Processing.Interfaces.Dimensions.Genshin.ITeyvat">
+    <Position X="30" Y="10" Width="1.5" />
+    <InheritanceLine Type="RuniOS.Processing.Interfaces.IVirtualWorld" FixedToPoint="true">
+      <Path>
+        <Point X="29" Y="8.913" />
+        <Point X="29" Y="9.625" />
+        <Point X="30.542" Y="9.625" Type="JumpStart" />
+        <Point X="30.708" Y="9.625" Type="JumpEnd" />
+        <Point X="30.875" Y="9.625" />
+        <Point X="30.875" Y="10" />
+      </Path>
+    </InheritanceLine>
+    <InheritanceLine Type="RuniOS.Processing.Interfaces.Dimensions.Reality.IRealPhysics" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="25.625" Y="6.671" />
+        <Point X="25.625" Y="7.12" />
+        <Point X="30.625" Y="7.12" />
+        <Point X="30.625" Y="10" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Processing\Interfaces\Dimensions\Genshin\ITeyvat.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="RuniOS.Processing.Interfaces.Dimensions.Reality.IStar">
+    <Position X="22.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Processing\Interfaces\Dimensions\Reality\IStar.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="RuniOS.Processing.Interfaces.Dimensions.Reality.IHeavenlyBody">
+    <Position X="17.5" Y="9" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Processing\Interfaces\Dimensions\Reality\IHeavenlyBody.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="RuniOS.Processing.Interfaces.Dimensions.Reality.ISatellite">
+    <Position X="24.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Processing\Interfaces\Dimensions\Reality\ISatellite.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="RuniOS.Processing.Interfaces.IOperatingSystem">
+    <Position X="22.25" Y="15" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Processing\Interfaces\IOperatingSystem.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="RuniOS.Processing.Interfaces.Dimensions.Reality.IInternet">
+    <Position X="19" Y="16.75" Width="1.75" />
+    <InheritanceLine Type="RuniOS.Processing.Interfaces.IOperatingSystem" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="22.812" Y="15.995" />
+        <Point X="22.812" Y="17.312" />
+        <Point X="20.75" Y="17.312" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Processing\Interfaces\Dimensions\Reality\IInternet.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="RuniOS.Processing.Interfaces.Dimensions.Reality.ILinux">
+    <Position X="24.25" Y="19.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Processing\Interfaces\Dimensions\Reality\ILinux.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="RuniOS.Processing.Interfaces.Dimensions.Reality.IWindows" HideInheritanceLine="true">
+    <Position X="19" Y="19.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Processing\Interfaces\Dimensions\Reality\IWindows.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="RuniOS.Processing.Interfaces.Dimensions.Reality.IMac" HideInheritanceLine="true">
+    <Position X="21.75" Y="19.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Processing\Interfaces\Dimensions\Reality\IMac.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="RuniOS.Processing.Interfaces.Dimensions.Reality.IAndroid">
+    <Position X="24.25" Y="21" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Processing\Interfaces\Dimensions\Reality\IAndroid.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="RuniOS.Processing.Interfaces.Dimensions.IBoxPhysics">
+    <Position X="34.5" Y="5.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Processing\Interfaces\Dimensions\IBoxPhysics.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="RuniOS.Processing.Interfaces.Dimensions.Minecraft.IMinecraft">
+    <Position X="35.25" Y="10" Width="1.5" />
+    <InheritanceLine Type="RuniOS.Processing.Interfaces.Dimensions.IBoxPhysics" FixedToPoint="true">
+      <Path>
+        <Point X="35.75" Y="6.671" />
+        <Point X="35.75" Y="10" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Processing\Interfaces\Dimensions\Minecraft\IMinecraft.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="RuniOS.Processing.Interfaces.Creatures.BiologicalSex">
     <Position X="12.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AwAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
-      <FileName>Processing\BiologicalSex.cs</FileName>
+      <FileName>Processing\Interfaces\Creatures\BiologicalSex.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Font Name="Pretended JP" Size="9" />

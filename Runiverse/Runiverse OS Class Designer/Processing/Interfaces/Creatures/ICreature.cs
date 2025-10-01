@@ -1,4 +1,4 @@
-﻿namespace RuniOS.Processing
+﻿namespace RuniOS.Processing.Interfaces.Creatures
 {
     /// <summary>
     /// 프로세스가 생명체일 때 상속되는 인터페이스 입니다.
@@ -15,5 +15,10 @@
         /// 생명체가 만들어진 날짜입니다.
         /// </summary>
         BigDateTime birthday { get; }
+
+        /// <summary>
+        /// 생명체의 나이입니다.
+        /// </summary>
+        BigComplex age { get; }
     }
 }

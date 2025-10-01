@@ -1,4 +1,6 @@
-﻿namespace RuniOS.Processing
+﻿using RuniOS.Processing.Interfaces.Dimensions;
+
+namespace RuniOS.Processing.Interfaces.Dimensions.Reality
 {
     /// <summary>
     /// 현실의 물리 법칙을 따르는 프로세스일 때 상속되는 인터페이스 입니다.

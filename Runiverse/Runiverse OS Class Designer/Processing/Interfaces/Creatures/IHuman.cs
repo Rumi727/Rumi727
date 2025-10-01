@@ -1,5 +1,8 @@
-﻿namespace RuniOS.Processing
+﻿namespace RuniOS.Processing.Interfaces.Creatures
 {
+    /// <summary>
+    /// 프로세스가 인간 또는 그와 유사한 생명체일 때 상속되는 인터페이스입니다.
+    /// </summary>
     public interface IHuman : IAnimal
     {
         /// <summary>

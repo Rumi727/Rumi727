@@ -1,9 +1,12 @@
-﻿namespace RuniOS.Processing
+﻿namespace RuniOS.Processing.Interfaces.Dimensions
 {
+    /// <summary>
+    /// 프로세스가 시간과 3차원 축이 있는 차원에 속해 있을 때 상속되는 인터페이스 입니다.
+    /// </summary>
     public interface IFourthDimension : IDimension
     {
         /// <summary>
-        /// 물질의 현재 절대 시간입니다. 물질마다 다를 수 있습니다. (단위: 초)
+        /// 물질이 속해 있는 차원의 현재 절대 시간입니다. (단위: 초)
         /// </summary>
         BigTimeSpan time { get; }
 

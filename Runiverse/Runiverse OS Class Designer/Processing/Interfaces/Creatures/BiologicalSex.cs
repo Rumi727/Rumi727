@@ -1,4 +1,4 @@
-﻿namespace RuniOS.Processing
+﻿namespace RuniOS.Processing.Interfaces.Creatures
 {
     public enum BiologicalSex
     {
