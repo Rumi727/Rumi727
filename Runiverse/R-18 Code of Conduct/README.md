@@ -12,4 +12,4 @@
 ### 캐릭터 목록
 
 * [오너캐 \(Rumi\)](Rumi.md)
-* [Kimu](Kimu.md) (아직 이름 확정인건 아니예요..!)
+* [Kimu](Kimu.md)

@@ -7,7 +7,7 @@
 
 * [Runiverse OS \(세계관\)](Runiverse%20OS.md)
 * [오너캐 \(Rumi\)](Rumi.md)
-* [Kimu](Kimu.md) (아직 이름 확정인건 아니예요..!)
+* [Kimu](Kimu.md)
 
 ### 참고 사항
 * 그림쟁이는 정보 및 디자인 문단만 보면 됩니다.
