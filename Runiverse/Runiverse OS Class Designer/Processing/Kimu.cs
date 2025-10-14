@@ -3,9 +3,9 @@ using RuniOS.Processing.Interfaces.Dimensions;
 
 namespace RuniOS.Processing
 {
-    public class Kimu : Process, IRuniverse, IAnalogCreature, IHuman
+    public sealed class Kimu : Process, IRuniverse, IAnalogCreature, IHuman
     {
-        public string applicationName => throw new NotImplementedException();
+        public string applicationName => "Runiverse OS";
         public Version applicationVersion => throw new NotImplementedException();
 
         public BigTimeSpan time => throw new NotImplementedException();
@@ -40,5 +40,7 @@ namespace RuniOS.Processing
 
         public string nationality => throw new NotImplementedException();
         public BiologicalSex biologicalSex => BiologicalSex.female;
+
+        public override void Kill() => AnalogConverter.ToAnalog(this);
     }
 }

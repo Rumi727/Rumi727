@@ -40,6 +40,6 @@ namespace RuniOS
         /// 프로세스를 운영체제에서 강제 종료합니다.
         /// </summary>
         /// <exception cref="UnauthorizedAccessException">적절한 권한이 없을때 발생하는 예외입니다.</exception>
-        [SystemCall("RuniOS.Process.Kill()")] public extern void Kill();
+        public abstract void Kill();
     }
 }

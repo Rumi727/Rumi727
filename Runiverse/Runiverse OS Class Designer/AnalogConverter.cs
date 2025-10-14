@@ -21,6 +21,6 @@
         /// <param name="process">아날로그로 변환할 프로세스입니다.</param>
         /// <exception cref="UnauthorizedAccessException">적절한 권한이 없을때 발생하는 예외입니다.</exception>
         [SystemCall("RuniOS.AnalogConverter.ToDigital(RuniOS.Process)")]
-        public static extern unsafe void ToAnalog(Process process);
+        public static extern void ToAnalog(Process process);
     }
 }

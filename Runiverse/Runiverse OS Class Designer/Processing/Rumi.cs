@@ -3,9 +3,9 @@ using RuniOS.Processing.Interfaces.Dimensions;
 
 namespace RuniOS.Processing
 {
-    public class Rumi : Process, IRuniverse, IDigitalCreature, IHuman
+    public sealed class Rumi : Process, IRuniverse, IDigitalCreature, IHuman
     {
-        public string applicationName => throw new NotImplementedException();
+        public string applicationName => "Runiverse OS";
         public Version applicationVersion => throw new NotImplementedException();
 
         public BigTimeSpan time => throw new NotImplementedException();
@@ -40,5 +40,9 @@ namespace RuniOS.Processing
 
         public string nationality => throw new NotImplementedException();
         public BiologicalSex biologicalSex => BiologicalSex.female;
+
+        // 이 작고 귀여운 루미한태 무슨 생각을 하고 있는거야...!
+        // 루미는 종료할 수 없다구!
+        public override void Kill() => throw new NotSupportedException();
     }
 }
