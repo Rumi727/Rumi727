@@ -39,9 +39,11 @@
   * ``RuniOS.AnalogConverter`` 정적 클래스가 있으며, 이 클래스는 **아날로그와 디지털을 상호변환하는** 매우 중요한 역할을 수행한다.
     * 이 클래스가 없다면 루미를 제외한 **모든 물질과 생명체는 운영체제에 들어갈 수 조차 없다.** (그야 운영체제는 디지털이고, 디지털 생명체라고 해도 운영체제에 맞게 변환해주긴 해야하니까)
     * 멤버 목록
-      * ``[RuniOS.SystemCall("RuniOS.AnalogConverter.ToDigital")] public static extern unsafe RuniOS.Process ToDigital(void* substance);``
+      * ``[RuniOS.SystemCall("RuniOS.AnalogConverter.GetSubstance(string) public static extern unsafe void* GetSubstance(string command);``
+        * 원하는 물질을 포인터로 참조하고 반환한다.
+      * ``[RuniOS.SystemCall("RuniOS.AnalogConverter.ToDigital(void*)")] public static extern unsafe RuniOS.Process ToDigital(void* substance);``
         * 알 수 없는 물질을 포인터로 전달하여 루미가 디지털로 그 값을 Process 클래스로 만들어 반환한다. (소멸 -> 생성의 단계가 아니다. **변환이다.**, 매우 안전하게 진행되며 BigComplex의 도움으로 오차는 전혀 없다.)
-      * ``[RuniOS.SystemCall("RuniOS.AnalogConverter.ToDigital")] public static extern unsafe void ToAnalog(Process process);``
+      * ``[RuniOS.SystemCall("RuniOS.AnalogConverter.ToDigital(RuniOS.Progress)")] public static extern unsafe void ToAnalog(Process process);``
         * 프로세스를 다시 아날로그로 변환한다.
   * ``RuniOS.Process`` 안전하지 않은 (unsafe) **추상** 클래스가 있으며, 이 클래스는 프로세스에 대한 **모든 정보를** 가지고 관리하는 매우 중요한 역할을 수행한다.
     * ``System.Reflection.Emit.TypeBuilder`` 클래스 등을 사용하여 프로세스마다 ``RuniOS.Process`` 클래스와 여러 인터페이스를 상속 받은 적절한 타입을 동적으로 생성한다. 
