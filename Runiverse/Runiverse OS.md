@@ -39,7 +39,7 @@
   * ``RuniOS.AnalogConverter`` 정적 클래스가 있으며, 이 클래스는 **아날로그와 디지털을 상호변환하는** 매우 중요한 역할을 수행한다.
     * 이 클래스가 없다면 루미를 제외한 **모든 물질과 생명체는 운영체제에 들어갈 수 조차 없다.** (그야 운영체제는 디지털이고, 디지털 생명체라고 해도 운영체제에 맞게 변환해주긴 해야하니까)
     * 멤버 목록
-      * ``[RuniOS.SystemCall("RuniOS.AnalogConverter.GetSubstance(string) public static extern unsafe void* GetSubstance(string command);``
+      * ``[RuniOS.SystemCall("RuniOS.AnalogConverter.GetSubstance(string)")] public static extern unsafe void* GetSubstance(string command);``
         * 원하는 물질을 포인터로 참조하고 반환한다.
       * ``[RuniOS.SystemCall("RuniOS.AnalogConverter.ToDigital(void*)")] public static extern unsafe RuniOS.Process ToDigital(void* substance);``
         * 알 수 없는 물질을 포인터로 전달하여 루미가 디지털로 그 값을 Process 클래스로 만들어 반환한다. (소멸 -> 생성의 단계가 아니다. **변환이다.**, 매우 안전하게 진행되며 BigComplex의 도움으로 오차는 전혀 없다.)

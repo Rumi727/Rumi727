@@ -3,12 +3,12 @@
   <Class Name="RuniOS.AnalogConverter">
     <Position X="53.25" Y="1.25" Width="3.25" />
     <TypeIdentifier>
-      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAA=</HashCode>
       <FileName>AnalogConverter.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="RuniOS.Process">
-    <Position X="53.25" Y="2.75" Width="3.25" />
+    <Position X="53.25" Y="3" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAEAAAAAAAAAAAAIAAAEAAAAAAAAAAABAAgA=</HashCode>
       <FileName>Process.cs</FileName>
@@ -29,13 +29,13 @@
     </TypeIdentifier>
   </Class>
   <Class Name="RuniOS.Processing.Kimu">
-    <Position X="55.25" Y="6" Width="2.75" />
+    <Position X="55.25" Y="6.25" Width="2.75" />
     <InheritanceLine Type="RuniOS.Process" ManuallyRouted="true">
       <Path>
-        <Point X="54.875" Y="4.638" />
-        <Point X="54.875" Y="5.199" />
-        <Point X="56.625" Y="5.199" />
-        <Point X="56.625" Y="6" />
+        <Point X="54.875" Y="4.888" />
+        <Point X="54.875" Y="5.449" />
+        <Point X="56.625" Y="5.449" />
+        <Point X="56.625" Y="6.25" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
@@ -46,13 +46,13 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="RuniOS.Processing.Rumi">
-    <Position X="51.75" Y="6" Width="2.75" />
+    <Position X="51.75" Y="6.25" Width="2.75" />
     <InheritanceLine Type="RuniOS.Process" ManuallyRouted="true">
       <Path>
-        <Point X="54.875" Y="4.638" />
-        <Point X="54.875" Y="5.197" />
-        <Point X="53.125" Y="5.197" />
-        <Point X="53.125" Y="6" />
+        <Point X="54.875" Y="4.888" />
+        <Point X="54.875" Y="5.447" />
+        <Point X="53.125" Y="5.447" />
+        <Point X="53.125" Y="6.25" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
@@ -62,13 +62,13 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="RuniOS.Processing.OsuLazer">
-    <Position X="51" Y="10.5" Width="3.5" />
+    <Position X="51" Y="10.75" Width="3.5" />
     <InheritanceLine Type="RuniOS.Process" ManuallyRouted="true">
       <Path>
-        <Point X="54.875" Y="4.637" />
-        <Point X="54.875" Y="9.967" />
-        <Point X="52.75" Y="9.967" />
-        <Point X="52.75" Y="10.5" />
+        <Point X="54.875" Y="4.887" />
+        <Point X="54.875" Y="10.217" />
+        <Point X="52.75" Y="10.217" />
+        <Point X="52.75" Y="10.75" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
@@ -78,13 +78,13 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="RuniOS.Processing.TetrIO">
-    <Position X="55.25" Y="10.5" Width="3.5" />
+    <Position X="55.25" Y="10.75" Width="3.5" />
     <InheritanceLine Type="RuniOS.Process" ManuallyRouted="true">
       <Path>
-        <Point X="54.875" Y="4.637" />
-        <Point X="54.875" Y="9.97" />
-        <Point X="57" Y="9.97" />
-        <Point X="57" Y="10.5" />
+        <Point X="54.875" Y="4.887" />
+        <Point X="54.875" Y="10.22" />
+        <Point X="57" Y="10.22" />
+        <Point X="57" Y="10.75" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
@@ -261,6 +261,14 @@
   </Interface>
   <Interface Name="RuniOS.Processing.Interfaces.Dimensions.IRuniverse">
     <Position X="35.5" Y="7.5" Width="1.75" />
+    <InheritanceLine Type="RuniOS.Processing.Interfaces.IOperatingSystem" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="39.062" Y="2.245" />
+        <Point X="39.062" Y="7.125" />
+        <Point X="36.625" Y="7.125" />
+        <Point X="36.625" Y="7.5" />
+      </Path>
+    </InheritanceLine>
     <InheritanceLine Type="RuniOS.Processing.Interfaces.Dimensions.Reality.IRealPhysics" ManuallyRouted="true" FixedToPoint="true">
       <Path>
         <Point X="22.375" Y="6.671" />
@@ -269,14 +277,6 @@
         <Point X="26.583" Y="7.12" Type="JumpEnd" />
         <Point X="36.125" Y="7.12" />
         <Point X="36.125" Y="7.5" />
-      </Path>
-    </InheritanceLine>
-    <InheritanceLine Type="RuniOS.Processing.Interfaces.IOperatingSystem" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="39.062" Y="2.245" />
-        <Point X="39.062" Y="7.125" />
-        <Point X="36.625" Y="7.125" />
-        <Point X="36.625" Y="7.5" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
@@ -293,14 +293,6 @@
   </Interface>
   <Interface Name="RuniOS.Processing.Interfaces.Dimensions.BlueArchive.IKivotos">
     <Position X="23.25" Y="8" Width="1.5" />
-    <InheritanceLine Type="RuniOS.Processing.Interfaces.Dimensions.Reality.IRealPhysics" ManuallyRouted="true" FixedToPoint="true">
-      <Path>
-        <Point X="22.375" Y="6.671" />
-        <Point X="22.375" Y="7.12" />
-        <Point X="23.875" Y="7.12" />
-        <Point X="23.875" Y="8" />
-      </Path>
-    </InheritanceLine>
     <InheritanceLine Type="RuniOS.Processing.Interfaces.IVirtualWorld" FixedToPoint="true">
       <Path>
         <Point X="18.25" Y="6.413" />
@@ -311,6 +303,14 @@
         <Point X="23.958" Y="7.625" Type="JumpEnd" />
         <Point X="24.125" Y="7.625" />
         <Point X="24.125" Y="8" />
+      </Path>
+    </InheritanceLine>
+    <InheritanceLine Type="RuniOS.Processing.Interfaces.Dimensions.Reality.IRealPhysics" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="22.375" Y="6.671" />
+        <Point X="22.375" Y="7.12" />
+        <Point X="23.875" Y="7.12" />
+        <Point X="23.875" Y="8" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
@@ -327,14 +327,6 @@
   </Interface>
   <Interface Name="RuniOS.Processing.Interfaces.Dimensions.Genshin.ITeyvat">
     <Position X="20.5" Y="8" Width="1.5" />
-    <InheritanceLine Type="RuniOS.Processing.Interfaces.Dimensions.Reality.IRealPhysics" ManuallyRouted="true" FixedToPoint="true">
-      <Path>
-        <Point X="22.375" Y="6.671" />
-        <Point X="22.375" Y="7.12" />
-        <Point X="21.125" Y="7.12" />
-        <Point X="21.125" Y="8" />
-      </Path>
-    </InheritanceLine>
     <InheritanceLine Type="RuniOS.Processing.Interfaces.IVirtualWorld" FixedToPoint="true">
       <Path>
         <Point X="18.25" Y="6.413" />
@@ -343,6 +335,14 @@
         <Point X="21.208" Y="7.625" Type="JumpEnd" />
         <Point X="21.375" Y="7.625" />
         <Point X="21.375" Y="8" />
+      </Path>
+    </InheritanceLine>
+    <InheritanceLine Type="RuniOS.Processing.Interfaces.Dimensions.Reality.IRealPhysics" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="22.375" Y="6.671" />
+        <Point X="22.375" Y="7.12" />
+        <Point X="21.125" Y="7.12" />
+        <Point X="21.125" Y="8" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
