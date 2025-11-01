@@ -84,14 +84,14 @@
 
 추가로 디자인도 지인이 다 해줬습니다. ~~특징 간단하게 던졌는데 생각한 대로 그려준 지인은 천재가 아닐까하는...~~
 
-<img width="2999" height="1895" alt="-3" src="Rumi.png" />\
+<img width="2999" height="1895" alt="-3" src="Images/Rumi.png" />\
 ~~...그러고보니 노트북 고장났나 노트북 어디감?~~\
 ~~그리기 귀찮긴 해\~~~
 
 아래는 참고 및 기록 보존용? 레거시 이미지들
 
-[프사](Rumi-Profile.png)\
-[전신](Rumi-First.png)
+[프사](Images/Rumi-Profile.png)\
+[전신](Images/Rumi-First.png)
 
 
 
