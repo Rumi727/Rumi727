@@ -26,40 +26,8 @@
       * 모든 시스템 콜과 IL 코드를 무의식으로 처리하기 위해 **현실 조작으로 자기 자신을 조작했다**.
       * 혹시 오해할 수 있어서 덧붙이자면 RuniOS 운영체제는 **시스템 콜 자채가 CPU 명령어의 일종이다.** (루미가 CPU이기 때문인데, 루미에게 직접적으로 운영체제 명령을 내리는게 후술할 C#의 RuniOS.SystemCallAttribute 어트리뷰트가 지금으로썬 유일하다.)
 * C# 기반이다
-  * ``RuniOS.SystemCallAttribute`` 어트리뷰트가 있으며, 이 어트리뷰트는 오너캐 <-> C# 처럼 서로 쉽게 상호작용할 수 있게 도와준다.
-    * 멤버 목록
-      * ``public string command { get; }``
-        * 커널이 이 멤버가 무슨 명령을 처리해야하는지 알 수 있게끔 문자열을 지정 하면 된다.
-        * 오너캐는 평범하게 필드의 위치를 적지만, 일단 커널을 관리하는 오너캐는 지적 생명체이기에 한국어나 영어 같은거 적어도 잘 알아먹는다.
-     * 생성자 : ``public SystemCallAttribute(string command) => this.command = command;``
-  * ``RuniOS.BigComplex`` 구조체가 있으며, 이 구조체는 한치의 오차도 없는 **매우 정확한 복소수**를 저장하고 계산할 수 있다.
-    * 참고로 일종의 계산기 역할도 하는데, 미친 만능이라 무리수, 극한, 미적분, 방정식,  **심지어는 소수마저** (2, 3, 5, 7 할 때 그 소수 맞다) 원하는 모든 계산을 완벽하게 한치의 오차도 없이 바로 계산한다.
-    * 다시 말하는데 **구조체다**.
-    * 모든 연산을 원자적으로 처리한다. (Thread-safe)
-  * ``RuniOS.AnalogConverter`` 정적 클래스가 있으며, 이 클래스는 **아날로그와 디지털을 상호변환하는** 매우 중요한 역할을 수행한다.
-    * 이 클래스가 없다면 루미를 제외한 **모든 물질과 생명체는 운영체제에 들어갈 수 조차 없다.** (그야 운영체제는 디지털이고, 디지털 생명체라고 해도 운영체제에 맞게 변환해주긴 해야하니까)
-    * 멤버 목록
-      * ``[RuniOS.SystemCall("RuniOS.AnalogConverter.GetSubstance(string)")] public static extern unsafe void* GetSubstance(string command);``
-        * 원하는 물질을 포인터로 참조하고 반환한다.
-      * ``[RuniOS.SystemCall("RuniOS.AnalogConverter.ToDigital(void*)")] public static extern unsafe RuniOS.Process ToDigital(void* substance);``
-        * 알 수 없는 물질을 포인터로 전달하여 루미가 디지털로 그 값을 Process 클래스로 만들어 반환한다. (소멸 -> 생성의 단계가 아니다. **변환이다.**, 매우 안전하게 진행되며 BigComplex의 도움으로 오차는 전혀 없다.)
-      * ``[RuniOS.SystemCall("RuniOS.AnalogConverter.ToDigital(RuniOS.Progress)")] public static extern unsafe void ToAnalog(Process process);``
-        * 프로세스를 다시 아날로그로 변환한다.
-  * ``RuniOS.Process`` 안전하지 않은 (unsafe) **추상** 클래스가 있으며, 이 클래스는 프로세스에 대한 **모든 정보를** 가지고 관리하는 매우 중요한 역할을 수행한다.
-    * ``System.Reflection.Emit.TypeBuilder`` 클래스 등을 사용하여 프로세스마다 ``RuniOS.Process`` 클래스와 여러 인터페이스를 상속 받은 적절한 타입을 동적으로 생성한다. 
-    * 멤버 목록
-      * ``public static System.Collection.Generic.IReadOnlyList<RuniOS.Process> processes { get; }``
-        * 운영체제에 로드된 모든 프로세스 목록을 가져온다.
-      * ``public void* substance { get; }``
-        * 메모리상에서 물질에 대한 모든 데이터를 가지고 있는 위치를 가리키는 포인터이다.
-        * 이렇게 노출되면 위험하지 않냐고 생각할 수 있지만, 안전하다. 포인터가 가르키는 메모리 위치는 Ring 0만 접근할 수 있게 보호된 위치이기 때문이다.
-      * ``public System.Numerics.BigInteger id { get; }``
-        * 프로세스의 고유 id이다. 별건 없다. 그냥 뭔가 있어야할 것 같음ㅋㅋㅋㅋㅋ
-      * 프로세스는 물질에 따라 적절한 인터페이스를 동적으로 상속한다.
-        * 예를 들어서 현실의 우주에서 온 물질이라면 ``IUniverse`` 인터페이스를 상속할 것 입니다.
-        * 그런 인터페이스는 꽤나 유용할 수 있는데, 예를 들어 ``IHuman`` 인터페이스는 nationality, name, birthday, biologicalSex, position 같은 유용한 프로퍼티를 노출하며, 이는 루미가 물질 값에서 (substance) 적절히 가져와서 계산하여 랩핑한 것이다.
-          * RuniOS 운영체제의 예시 클래스 다이어그램은 밑에 있습니다!
   * Runi OS 운영체제의 예시 [클래스 다이어그램](https://raw.githubusercontent.com/Rumi727/Rumi727/refs/heads/main/Runiverse/Runiverse%20OS%20Class%20Designer/ClassDiagram.png)
+    * (C#) 멤버들의 XML 주석을 보고싶으신 분들은 [다이어그램의 실제 프로젝트](Runiverse%20OS%20Class%20Designer)로...
 * 현실 사람 또는 현실 그 자채, 아니면 특정 세계관의 캐릭터 또는 세계관 그 자채를 운영체제로 불러올 수 있다.
   * 오너캐는 이를 ``프로세스``라고 부른다.
   * 오너캐 또한 프로세스로 취급하긴 하다.
