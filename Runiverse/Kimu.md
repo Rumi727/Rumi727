@@ -18,7 +18,7 @@
 ## 정보
 
 이름 : Kimu\
-탄생일 : ~~2025-10-10T21:57:00+09:00~~ -> <a href="https://learn.microsoft.com/ko-kr/dotnet/api/system.objectdisposedexception" style="color:red">ObjectDisposedException: 삭제된 객체에 접근할 수 없습니다.</a>\
+일러 탄생일 : ~~2025-10-10T21:57:00+09:00~~ -> <a href="https://learn.microsoft.com/ko-kr/dotnet/api/system.objectdisposedexception" style="color:red">ObjectDisposedException: 삭제된 객체에 접근할 수 없습니다.</a>\
 나이 : ~~\[데이터 말소\]~~ -> **국내법상 형식적인** 연령 자채는 성인이다. **절대 미성년자가 아님에 유의** 할 것\
 정신 연령 : 알 수 없음\
 지능 : IQ 253\
