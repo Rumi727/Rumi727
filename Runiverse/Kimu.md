@@ -1,7 +1,7 @@
 [Ring 0]:https://ko.wikipedia.org/wiki/%EB%B3%B4%ED%98%B8_%EB%A7%81
 # Kimu
 
-버전 : v0.4.0
+버전 : v0.5.0
 
 ---
 
@@ -24,7 +24,7 @@
 지능 : IQ 253\
 퍼스널 컬러 : (RGB , , ) (HSV , , ) (HEX )\
 머리카락 : \
-성별 : 여캐\
+성별 : 오토코노코\
 키 : 작음\
 액세서리 : \
 소속 : Runiverse OS
