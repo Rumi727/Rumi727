@@ -28,6 +28,8 @@
 * C# 기반이다
   * Runi OS 운영체제의 예시 [클래스 다이어그램](https://raw.githubusercontent.com/Rumi727/Rumi727/refs/heads/main/Runiverse/Runiverse%20OS%20Class%20Designer/ClassDiagram.png)
   * (C#) 멤버들의 설명을 보고싶으신 분들은 [다이어그램의 실제 프로젝트](Runiverse%20OS%20Class%20Designer)로...
+  * 사실... C#과 전혀 어울리지 않는 설계 구조라는걸 깨달았어요.\
+    갈아엎을 생각은 있지만, 귀찮네요... 그냥 참고용으로만 봐주세요.
 * 현실 사람 또는 현실 그 자채, 아니면 특정 세계관의 캐릭터 또는 세계관 그 자채를 운영체제로 불러올 수 있다.
   * 오너캐는 이를 ``프로세스``라고 부른다.
   * 오너캐 또한 프로세스로 취급하긴 하다.
