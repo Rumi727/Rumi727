@@ -43,7 +43,7 @@
 
 한줄 요약 : 참고를 제외한 **모든 행동 금지.**
 
-<img width="2500" height="3000" alt="-3" src="Images/Kimu.png" />\
+<img width="625" height="750" alt="-3" src="Images/Kimu.png" />
 
 ## 설정
 
