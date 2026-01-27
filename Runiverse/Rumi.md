@@ -93,13 +93,14 @@
 [전신](Images/Rumi-First.png)\
 파일 이름을 보면 아시겠지만... 루미의 첫 그림입니다.\
 머리색이랑 눈동자 색이 그림 전체 분위기가 어두운걸 생각해도 너무 어둡다고요?\
-사실 원래 루미는 지금처럼 밝은 색을 가지고 있지 않았습니다.\ 채도가 엄청 뚜렸했어요.
+사실 원래 루미는 지금처럼 밝은 색을 가지고 있지 않았습니다. 채도가 엄청 뚜렸했어요.\
 저도 왜인진 모르겠다만, 점점 밝아지더라고요?\
 루미 설정이 워낙 복잡하다보니... 그리는 사람도 까먹는 듯해요.
 
 근본 루미 색\
-머리색 (RGB 157, 200, 252) (HSV 213, 38, 99) (HEX 9DC8FC)
-눈동자 색 (RGB 91, 145, 255) (HSV 220, 64, 100) (HEX 5B91FF)
+머리색 <sub><sub><img alt="HEX 32A0FF" src="https://img.shields.io/badge/HEX-9DC8FC-9DC8FC?style=flat-square"></sub></sub> <!-- markdownlint-disable-line MD033 -->\
+눈동자 색 <sub><sub><img alt="HEX 32A0FF" src="https://img.shields.io/badge/HEX-5B91FF-5B91FF?style=flat-square"></sub></sub> <!-- markdownlint-disable-line MD033 -->\
+눈동자 숫자 색 <sub><sub><img alt="HEX 32A0FF" src="https://img.shields.io/badge/HEX-BEEDFD-BEEDFD?style=flat-square"></sub></sub> <!-- markdownlint-disable-line MD033 -->
 
 딱 이 색을 가지고 있는 그림이 있지만, 지인이 다른 그림들은 올리지 말아달라 요청하셔서 아쉽게도...
 
